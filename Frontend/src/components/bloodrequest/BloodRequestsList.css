@@ -1,0 +1,40 @@
+.blood-requests-list {
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+  }
+  
+  .blood-requests-list h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.8rem;
+    color: #333;
+  }
+  
+  .blood-requests-list ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .blood-requests-list li {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    background-color: white;
+    margin-bottom: 10px;
+    color: black;
+  }
+  
+  .blood-requests-list li strong {
+    color: #007bff;
+  }
+  
+  .blood-requests-list p {
+    text-align: center;
+    font-size: 1rem;
+    color: #666;
+  }
+  

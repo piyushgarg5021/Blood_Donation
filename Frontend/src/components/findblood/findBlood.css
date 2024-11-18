@@ -1,0 +1,60 @@
+.find-blood {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f9f9f9;
+  padding: 2rem;
+}
+
+.search-container {
+  background-color: #ffffff;
+  padding: 2rem 3rem;
+  border-radius: 8px;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 500px;
+}
+
+.search-title {
+  font-size: 24px;
+  font-weight: bold;
+  color: #333333;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.find-blood-form label {
+  font-size: 14px;
+  color: #555555;
+  margin-bottom: 0.5rem;
+}
+
+.find-blood-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1.25rem;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.search-button {
+  background-color: #d9534f;
+  color: #ffffff;
+  padding: 0.75rem;
+  font-size: 16px;
+  font-weight: bold;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 100%;
+}
+
+.search-button:hover {
+  background-color: #c9302c;
+}
+
+.donorsList {
+  color: black;
+}
