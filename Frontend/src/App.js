@@ -1,9 +1,10 @@
 import { Route, BrowserRouter as Router, Routes } from 'react-router-dom';
 import About from './components/about-us/about';
+import BloodCompatibilityCalculator from './components/blood_calculator/BloodCompatibilityCalculator';
 import BloodRequest from './components/bloodrequest/BloodRequest';
 import BloodRequestsList from './components/bloodrequest/BloodRequestsList';
-import BloodCompatibilityCalculator from './components/blood_calculator/BloodCompatibilityCalculator';
 import OrganizationDashboard from './components/dashboard/OrganizationDashboard';
+import FAQ from './components/faq/FAQ';
 import FindBlood from './components/findblood/FindBlood';
 import Home from './components/home/home';
 import DonorLogin from './components/login/donor/login';
@@ -12,7 +13,6 @@ import Navbar from './components/navbar/navbar';
 import DonorProfile from './components/profile/DonorProfile';
 import DonorRegister from './components/register/donor/DonorRegister';
 import OrganizationRegister from './components/register/organization/OrganizationRegister';
-import FAQ from './components/faq/FAQ';
 
 function App() {
   return (

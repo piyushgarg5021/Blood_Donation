@@ -62,7 +62,7 @@ const DonorRegister = () => {
         <h2 className="form-title">Donor Signup</h2>
         <form onSubmit={handleSubmit} className="donor-register-form">
           <label>Name:</label>
-          <input type="text" name="name" value={formData.username} onChange={handleChange} required />
+          <input type="text" name="username" value={formData.username} onChange={handleChange} required />
 
           <label>Email:</label>
           <input type="email" name="email" value={formData.email} onChange={handleChange} required />

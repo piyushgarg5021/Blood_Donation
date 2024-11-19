@@ -1,6 +1,6 @@
 // DonorProfile.js
 import React, { useEffect, useState } from 'react';
-
+import './DonorProfile.css';
 const DonorProfile = () => {
   const email = window.location.pathname.split('/').pop();
   const [donorData, setDonorData] = useState({

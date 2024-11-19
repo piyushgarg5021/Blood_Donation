@@ -1,46 +1,73 @@
+// import React from 'react';
+// import { Link } from 'react-router-dom';
+// import './navbar.css';
+
+// const Navbar = () => {
+//   return (
+//     <nav className="navbar">
+//       <div className="desktopMenu">
+//         <Link to="/" className="desktopMenuListItem">Home</Link>
+//         <Link to="/register/donor" className="desktopMenuListItem">Register as Donor</Link>
+//         <Link to="/register/organization" className="desktopMenuListItem">Register as Organization</Link>
+//         <Link to="/login/donor" className="desktopMenuListItem">Donor Login</Link>
+//         <Link to="/login/organization" className="desktopMenuListItem">Organization Login</Link>
+//         <Link to="/faq" className="desktopMenuListItem">FAQs</Link>
+//         <Link to="/blood-calculator" className="desktopMenuListItem">Blood Compatibility Calculator</Link>
+//         <Link to="/blood-request" className="desktopMenuListItem">Blood Request Feature</Link>
+//         <Link to="/blood-requests" className="desktopMenuListItem">Blood Request List</Link>
+//         <Link to="/about-us" className="desktopMenuListItem">About us</Link>
+//       </div>
+//     </nav>
+//   )
+// }
+
+// export default Navbar
+
 import React, { useState } from 'react';
-import { Link, useLocation } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './navbar.css';
 
 const Navbar = () => {
-  const [isMobileMenuOpen, setMobileMenuOpen] = useState(false);
-  const location = useLocation();
+  const [menuOpen, setMenuOpen] = useState(false);
 
-  const toggleMobileMenu = () => {
-    setMobileMenuOpen(!isMobileMenuOpen);
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
   };
 
   return (
     <nav className="navbar">
-      <Link to="/" className="logo">BloodConnect</Link>
-
-      <div className="menu">
-        <Link to="/" className={location.pathname === '/' ? 'active' : ''}>Home</Link>
-        <Link to="/register/donor" className={location.pathname === '/register/donor' ? 'active' : ''}>Register as Donor</Link>
-        <Link to="/register/organization" className={location.pathname === '/register/organization' ? 'active' : ''}>Register as Organization</Link>
-        <Link to="/faq" className={location.pathname === '/faq' ? 'active' : ''}>FAQs</Link>
-        <Link to="/blood-calculator" className={location.pathname === '/blood-calculator' ? 'active' : ''}>Blood Calculator</Link>
-        <Link to="/blood-request" className={location.pathname === '/blood-request' ? 'active' : ''}>Blood Request</Link>
-        <Link to="/about-us" className={location.pathname === '/about-us' ? 'active' : ''}>About Us</Link>
-        <button className="btn">Login</button>
+      
+      
+      {/* Desktop Menu */}
+      <div className="desktopMenu">
+        <Link to="/" className="desktopMenuListItem">Home</Link>
+        <Link to="/register/donor" className="desktopMenuListItem">Register as Donor</Link>
+        <Link to="/register/organization" className="desktopMenuListItem">Register as Organization</Link>
+        <Link to="/login/donor" className="desktopMenuListItem">Donor Login</Link>
+        <Link to="/login/organization" className="desktopMenuListItem">Organization Login</Link>
+        <Link to="/faq" className="desktopMenuListItem">FAQs</Link>
+        <Link to="/blood-calculator" className="desktopMenuListItem">Blood Calculator</Link>
+        <Link to="/blood-request" className="desktopMenuListItem">Blood Request</Link>
+        <Link to="/about-us" className="desktopMenuListItem">About Us</Link>
       </div>
 
-      {/* Mobile Menu */}
-      <div className="hamburger" onClick={toggleMobileMenu}>
+    
+      <div className="hamburger" onClick={toggleMenu}>
         <div></div>
         <div></div>
         <div></div>
       </div>
-
-      {isMobileMenuOpen && (
+      {menuOpen && (
         <div className="mobileMenu">
-          <Link to="/" onClick={toggleMobileMenu}>Home</Link>
-          <Link to="/register/donor" onClick={toggleMobileMenu}>Register as Donor</Link>
-          <Link to="/register/organization" onClick={toggleMobileMenu}>Register as Organization</Link>
-          <Link to="/faq" onClick={toggleMobileMenu}>FAQs</Link>
-          <Link to="/blood-calculator" onClick={toggleMobileMenu}>Blood Calculator</Link>
-          <Link to="/blood-request" onClick={toggleMobileMenu}>Blood Request</Link>
-          <Link to="/about-us" onClick={toggleMobileMenu}>About Us</Link>
+          <Link to="/" className="mobileMenuListItem" onClick={toggleMenu}>Home</Link>
+          <Link to="/register/donor" className="mobileMenuListItem" onClick={toggleMenu}>Register as Donor</Link>
+          <Link to="/register/organization" className="mobileMenuListItem" onClick={toggleMenu}>Register as Organization</Link>
+          <Link to="/login/donor" className="mobileMenuListItem" onClick={toggleMenu}>Donor Login</Link>
+          <Link to="/login/organization" className="mobileMenuListItem" onClick={toggleMenu}>Organization Login</Link>
+          <Link to="/faq" className="mobileMenuListItem" onClick={toggleMenu}>FAQs</Link>
+          <Link to="/blood-calculator" className="mobileMenuListItem" onClick={toggleMenu}>Blood Calculator</Link>
+          <Link to="/blood-request" className="mobileMenuListItem" onClick={toggleMenu}>Blood Request</Link>
+          <Link to="/about-us" className="mobileMenuListItem" onClick={toggleMenu}>About Us</Link>
         </div>
       )}
     </nav>

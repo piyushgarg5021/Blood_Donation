@@ -1,0 +1,60 @@
+.donor-profile {
+    font-family: 'Arial', sans-serif;
+    margin: 20px auto;
+    padding: 20px;
+    max-width: 800px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+  }
+  
+  .donor-profile h2, .donor-profile h3 {
+    text-align: center;
+    color: #333;
+  }
+  
+  .profile-details {
+    padding: 15px;
+    background-color: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  .profile-details p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #555;
+  }
+  
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  ul li {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin-bottom: 10px;
+    background-color: #fff;
+  }
+  
+  ul li strong {
+    color: #444;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .donor-profile {
+      padding: 10px;
+    }
+  
+    .profile-details p {
+      font-size: 14px;
+    }
+  
+    ul li {
+      font-size: 14px;
+    }
+  }
+  
